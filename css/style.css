@@ -70,7 +70,7 @@ width: 100%;
 .featured:hover {
   -webkit-filter: grayscale(100%);
 }
-.img-description-title{
+.img-description-title-light{
   position: absolute;
   text-align: center;
   font-weight: bold;
@@ -79,6 +79,20 @@ width: 100%;
  left: 0;
  right: 0;
  color: black;
+
+
+ visibility: hidden;
+ opacity: 0;
+}
+.img-description-title{
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ color: #FDFDFD;
 
 
  visibility: hidden;
@@ -98,6 +112,10 @@ width: 100%;
   visibility: visible;
    opacity: 1;
 }
+.featured:hover .img-description-title-light {
+  visibility: visible;
+   opacity: 1;
+}
 .articles {
   padding: 10px;
   border-style: solid;
@@ -113,4 +131,11 @@ width: 100%;
   border-width: 5px;
   border-color: black;
   margin: 10px;
+  margin-bottom: 50px;
+}
+.form {
+  text-align: center;
+  padding-bottom: 150px;
+}
+input {
 }
